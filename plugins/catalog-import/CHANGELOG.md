@@ -1,5 +1,19 @@
 # @backstage/plugin-catalog-import
 
+## 0.8.7
+
+### Patch Changes
+
+- 24254fd433: build(deps): bump `@testing-library/user-event` from 13.5.0 to 14.0.0
+- Updated dependencies
+  - @backstage/integration@1.1.0
+  - @backstage/plugin-catalog-react@1.0.1
+  - @backstage/catalog-model@1.0.1
+  - @backstage/core-components@0.9.3
+  - @backstage/core-plugin-api@1.0.1
+  - @backstage/integration-react@1.0.1
+  - @backstage/catalog-client@1.0.1
+
 ## 0.8.7-next.2
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @backstage/plugin-code-coverage-backend
 
+## 0.1.29
+
+### Patch Changes
+
+- 231d229eab: Bumped `knex` to version 1.0.6
+- Updated dependencies
+  - @backstage/integration@1.1.0
+  - @backstage/backend-common@0.13.2
+  - @backstage/catalog-model@1.0.1
+  - @backstage/catalog-client@1.0.1
+
 ## 0.1.29-next.1
 
 ### Patch Changes

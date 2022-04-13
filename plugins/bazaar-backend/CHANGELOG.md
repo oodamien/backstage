@@ -1,5 +1,14 @@
 # @backstage/plugin-bazaar-backend
 
+## 0.1.15
+
+### Patch Changes
+
+- 231d229eab: Bumped `knex` to version 1.0.6
+- Updated dependencies
+  - @backstage/backend-common@0.13.2
+  - @backstage/backend-test-utils@0.1.23
+
 ## 0.1.15-next.0
 
 ### Patch Changes

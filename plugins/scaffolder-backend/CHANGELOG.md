@@ -1,5 +1,25 @@
 # @backstage/plugin-scaffolder-backend
 
+## 1.1.0
+
+### Minor Changes
+
+- 2a7d52ca2c: Override default commit message and author details in GitLab action
+- f5f921dafb: Add new `draft` option to the `publish:github:pull-request` action.
+
+### Patch Changes
+
+- 231d229eab: Bumped `knex` to version 1.0.6
+- 64d9a031a8: build(deps): bump `isbinaryfile` from 4.0.8 to 5.0.0
+- 2f3d3a1eae: build(deps): bump `@gitbeaker/core` from 34.6.0 to 35.6.0
+- Updated dependencies
+  - @backstage/plugin-catalog-backend@1.1.0
+  - @backstage/integration@1.1.0
+  - @backstage/backend-common@0.13.2
+  - @backstage/catalog-model@1.0.1
+  - @backstage/catalog-client@1.0.1
+  - @backstage/plugin-scaffolder-common@1.0.1
+
 ## 1.1.0-next.2
 
 ### Patch Changes

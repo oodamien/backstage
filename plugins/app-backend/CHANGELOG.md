@@ -1,5 +1,14 @@
 # @backstage/plugin-app-backend
 
+## 0.3.31
+
+### Patch Changes
+
+- 231d229eab: Bumped `knex` to version 1.0.6
+- Updated dependencies
+  - @backstage/backend-common@0.13.2
+  - @backstage/config-loader@1.1.0
+
 ## 0.3.31-next.1
 
 ### Patch Changes

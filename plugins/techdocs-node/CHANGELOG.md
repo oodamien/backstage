@@ -1,5 +1,26 @@
 # @backstage/plugin-techdocs-node
 
+## 1.1.0
+
+### Minor Changes
+
+- bcf1a2496c: BREAKING: The default Techdocs behavior will no longer attempt to copy `docs/README.md` or `README.md` to `docs/index.md` (if not found). To retain this behavior in your instance, you can set the following config in your `app-config.yaml`:
+
+  ```yaml
+  techdocs:
+    generator:
+      mkdocs:
+        legacyCopyReadmeMdToIndexMd: true
+  ```
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/integration@1.1.0
+  - @backstage/backend-common@0.13.2
+  - @backstage/catalog-model@1.0.1
+  - @backstage/plugin-search-common@0.3.3
+
 ## 1.1.0-next.2
 
 ### Minor Changes

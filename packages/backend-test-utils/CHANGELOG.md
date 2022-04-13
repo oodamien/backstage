@@ -1,5 +1,15 @@
 # @backstage/backend-test-utils
 
+## 0.1.23
+
+### Patch Changes
+
+- 231d229eab: Bumped `knex` to version 1.0.6
+- 0654c87cf2: `TestDatabases.create` will no longer set up an `afterAll` test handler if no databases are supported.
+- Updated dependencies
+  - @backstage/backend-common@0.13.2
+  - @backstage/cli@0.17.0
+
 ## 0.1.23-next.1
 
 ### Patch Changes
