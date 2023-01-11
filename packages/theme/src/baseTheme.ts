@@ -26,8 +26,8 @@ import { pageTheme as defaultPageThemes } from './pageTheme';
 
 const DEFAULT_HTML_FONT_SIZE = 16;
 const DEFAULT_FONT_FAMILY =
-  '"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif';
-
+  'Metropolis, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif';
+// var(--clr-font, Metropolis, "Avenir Next", "Helvetica Neue", Arial, sans-serif)
 /**
  * A helper for creating theme options.
  *

@@ -41,6 +41,7 @@ const useStyles = makeStyles<BackstageTheme, { sidebarConfig: SidebarConfig }>(
   theme => ({
     drawer: props => ({
       display: 'flex',
+      boxShadow: '6px 0px 6px rgba(0,0,0,.35)',
       flexFlow: 'column nowrap',
       alignItems: 'flex-start',
       position: 'fixed',

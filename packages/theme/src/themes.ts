@@ -27,7 +27,7 @@ export const lightTheme = createTheme({
   palette: {
     type: 'light',
     background: {
-      default: '#F8F8F8',
+      default: '#f5f5f5',
     },
     status: {
       ok: '#1DB954',
@@ -48,7 +48,7 @@ export const lightTheme = createTheme({
       },
     },
     primary: {
-      main: '#2E77D0',
+      main: '#0079B8',
     },
     banner: {
       info: '#2E77D0',
@@ -72,15 +72,15 @@ export const lightTheme = createTheme({
     link: '#0A6EBE',
     gold: yellow.A700,
     navigation: {
-      background: '#171717',
+      background: '#FFFFFF',
       indicator: '#9BF0E1',
-      color: '#b5b5b5',
-      selectedColor: '#FFF',
+      color: '#565656',
+      selectedColor: '#000000',
       navItem: {
-        hoverBackground: '#404040',
+        hoverBackground: 'hsl(198deg, 0%, 91%)',
       },
       submenu: {
-        background: '#404040',
+        background: 'hsl(198deg, 0%, 91%)',
       },
     },
     pinSidebarButton: {

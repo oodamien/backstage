@@ -19,6 +19,8 @@ import { makeStyles } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import ExtensionIcon from '@material-ui/icons/Extension';
 import RuleIcon from '@material-ui/icons/AssignmentTurnedIn';
+import PolicyIcon from '@material-ui/icons/Policy';
+
 import MapIcon from '@material-ui/icons/MyLocation';
 import LayersIcon from '@material-ui/icons/Layers';
 import LibraryBooks from '@material-ui/icons/LibraryBooks';
@@ -73,7 +75,11 @@ const useSidebarLogoStyles = makeStyles({
   },
   link: {
     width: sidebarConfig.drawerWidthClosed,
-    marginLeft: 24,
+    marginLeft: 6,
+    transition: '.2s all',
+  },
+  linkLg: {
+    marginLeft: 20,
   },
 });
 
@@ -83,7 +89,12 @@ const SidebarLogo = () => {
 
   return (
     <div className={classes.root}>
-      <Link to="/" underline="none" className={classes.link} aria-label="Home">
+      <Link
+        to="/"
+        underline="none"
+        className={`${classes.link} ${isOpen ? classes.linkLg : ''}`}
+        aria-label="Home"
+      >
         {isOpen ? <LogoFull /> : <LogoIcon />}
       </Link>
     </div>
@@ -143,31 +154,26 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
             />
           </SidebarSubmenu>
         </SidebarItem>
-        <MyGroupsSidebarItem
+        {/* <MyGroupsSidebarItem
           singularTitle="My Squad"
           pluralTitle="My Squads"
           icon={GroupIcon}
-        />
-        <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
+        /> */}
         <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
-        <SidebarItem icon={PlaylistPlayIcon} to="playlist" text="Playlists" />
-        <SidebarItem icon={LayersIcon} to="explore" text="Explore" />
         <SidebarItem icon={CreateComponentIcon} to="create" text="Create..." />
+        <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
+        {/* <SidebarItem icon={PlaylistPlayIcon} to="playlist" text="Playlists" />
+        <SidebarItem icon={LayersIcon} to="explore" text="Explore" /> */}
         {/* End global nav */}
         <SidebarDivider />
-        <SidebarScrollWrapper>
-          <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />
-          <SidebarItem icon={RuleIcon} to="lighthouse" text="Lighthouse" />
-          <SidebarItem
-            icon={MoneyIcon}
-            to="cost-insights"
-            text="Cost Insights"
-          />
-          <SidebarItem icon={GraphiQLIcon} to="graphiql" text="GraphiQL" />
-          <SidebarItem icon={Score} to="score-board" text="Score board" />
-        </SidebarScrollWrapper>
-        <SidebarDivider />
-        <Shortcuts />
+        <SidebarItem icon={MapIcon} to="tech-radar" text="Supply Chain" />
+        <SidebarItem
+          icon={PolicyIcon}
+          to="lighthouse"
+          text="Security Analysis"
+        />
+        {/* <SidebarDivider /> */}
+        {/* <Shortcuts /> */}
       </SidebarGroup>
       <SidebarSpace />
       <SidebarDivider />

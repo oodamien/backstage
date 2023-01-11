@@ -80,7 +80,7 @@ const useStyles = makeStyles<
     title: {
       fontSize: theme.typography.h5.fontSize,
       fontWeight: theme.typography.fontWeightMedium,
-      color: '#FFF',
+      color: '#000',
       padding: theme.spacing(2.5),
       [theme.breakpoints.down('xs')]: {
         display: 'none',

@@ -125,7 +125,7 @@ const makeSidebarStyles = (sidebarConfig: SidebarConfig) =>
       },
       label: {
         // XXX (@koroeskohr): I can't seem to achieve the desired font-weight from the designs
-        fontWeight: 'bold',
+        fontWeight: '600',
         whiteSpace: 'nowrap',
         lineHeight: 'auto',
         flex: '3 1 auto',
@@ -184,7 +184,7 @@ const makeSidebarStyles = (sidebarConfig: SidebarConfig) =>
       },
       selected: {
         '&$root': {
-          borderLeft: `solid ${sidebarConfig.selectedIndicatorWidth}px ${theme.palette.navigation.indicator}`,
+          borderLeft: `solid 4px #0079B8`,
           color: theme.palette.navigation.selectedColor,
         },
         '&$closed': {
@@ -194,7 +194,7 @@ const makeSidebarStyles = (sidebarConfig: SidebarConfig) =>
           paddingRight: sidebarConfig.selectedIndicatorWidth,
         },
         '& $iconContainer': {
-          marginLeft: -sidebarConfig.selectedIndicatorWidth,
+          marginLeft: '-4px',
         },
       },
     }),
@@ -628,7 +628,7 @@ export const SidebarDivider = styled('hr')(
   ({ theme }) => ({
     height: 1,
     width: '100%',
-    background: '#383838',
+    background: '#CCCCCC',
     border: 'none',
     margin: theme.spacing(1.2, 0),
   }),
