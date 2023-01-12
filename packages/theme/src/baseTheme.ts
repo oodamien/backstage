@@ -137,8 +137,9 @@ export function createThemeOverrides(theme: BackstageTheme): Overrides {
       },
       // Alternating head backgrounds
       head: {
+        backgroundColor: theme.palette.background.default,
         '&:nth-of-type(odd)': {
-          backgroundColor: theme.palette.background.paper,
+          backgroundColor: theme.palette.background.default,
         },
       },
     },
@@ -152,6 +153,7 @@ export function createThemeOverrides(theme: BackstageTheme): Overrides {
         margin: 0,
         padding: theme.spacing(3, 2, 3, 2.5),
         borderBottom: 0,
+        background: 'transparent !important',
       },
       sizeSmall: {
         padding: theme.spacing(1.5, 2, 1.5, 2.5),
@@ -285,6 +287,22 @@ export function createThemeOverrides(theme: BackstageTheme): Overrides {
       root: {
         // We default to putting the card actions at the end
         justifyContent: 'flex-end',
+      },
+    },
+    MuiSelect: {
+      root: {
+        background:
+          theme.palette.type === 'dark'
+            ? 'hsl(198, 28%, 20%) !important'
+            : theme.palette.background.default,
+      },
+    },
+    MuiPaper: {
+      root: {
+        background:
+          theme.palette.type === 'dark'
+            ? 'hsl(198, 28%, 20%) !important'
+            : theme.palette.background.default,
       },
     },
   };

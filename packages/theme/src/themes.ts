@@ -104,7 +104,7 @@ export const darkTheme = createTheme({
   palette: {
     type: 'dark',
     background: {
-      default: '#333333',
+      default: 'hsl(198, 30%, 15%)',
     },
     status: {
       ok: '#71CF88',
@@ -153,15 +153,15 @@ export const darkTheme = createTheme({
     link: '#9CC9FF',
     gold: yellow.A700,
     navigation: {
-      background: '#424242',
+      background: '#FFFFFF',
       indicator: '#9BF0E1',
-      color: '#b5b5b5',
-      selectedColor: '#FFF',
+      color: '#565656',
+      selectedColor: '#000000',
       navItem: {
-        hoverBackground: '#404040',
+        hoverBackground: 'hsl(198deg, 0%, 91%)',
       },
       submenu: {
-        background: '#404040',
+        background: 'hsl(198deg, 0%, 91%)',
       },
     },
     pinSidebarButton: {
