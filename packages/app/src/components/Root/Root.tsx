@@ -66,7 +66,6 @@ import UserIcon from '@material-ui/icons/Person';
 
 const useSidebarLogoStyles = makeStyles({
   root: {
-    width: sidebarConfig.drawerWidthClosed,
     height: 3 * sidebarConfig.logoHeight,
     display: 'flex',
     flexFlow: 'row nowrap',
@@ -74,12 +73,11 @@ const useSidebarLogoStyles = makeStyles({
     marginBottom: -14,
   },
   link: {
-    width: sidebarConfig.drawerWidthClosed,
-    marginLeft: 6,
+    marginLeft: 16,
     transition: '.2s all',
   },
   linkLg: {
-    marginLeft: 20,
+    marginLeft: 16,
   },
 });
 
