@@ -18,8 +18,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core';
 import LogoIcon from './LogoIcon';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
+    display: 'block',
     width: 185,
     position: 'relative',
   },
@@ -27,11 +28,11 @@ const useStyles = makeStyles(theme => ({
   text: {
     position: 'absolute',
     top: 0,
-    right: -5,
+    right: -10,
     width: 145,
-    color: theme.palette.text.primary,
+    color: '#222222',
   },
-}));
+});
 const LogoFull = () => {
   const classes = useStyles();
 
